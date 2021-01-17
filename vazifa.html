@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="name" name="box">
+        <div class="circle" >
+            <div class="first2" >
+                <input type="checkbox" name="ch" class="ch" onclick="color()">
+                <span class="first"  name="sp"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function color(){
+            let h = document.querySelector('.ch').checked;
+            if(h == true){
+                document.querySelector('body').style.backgroundColor = 'red';
+                document.querySelector('.circle').style.backgroundColor = 'yellow';
+            }
+            else{
+                document.querySelector('body').style.backgroundColor="white";
+                document.querySelector('.circle').style.backgroundColor = '#f4f4f4';
+
+            }
+        }
+    </script>
+</body>
+</html>

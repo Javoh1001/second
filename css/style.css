@@ -1,0 +1,49 @@
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.name{
+    width:200px;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.name .circle{
+    height:20px;
+    width:40px;
+    border-radius:20px;
+    position:relative;
+    background-color:#f4f4f4;
+    box-shadow:0 0 4px rgba(0,0,0,.6)
+}
+.name .circle .first{
+    position:absolute;
+    width:20px;
+    height:100%;
+    border-radius:10px;
+    transition:all .4s linear;
+    display:block;
+    z-index:9;
+    background-color:white;
+    box-shadow:0 0 4px rgba(0,0,0,.8)
+}
+.name .circle .first2 input[type="checkbox"]{
+    position:absolute;
+    left:0;
+    top:0;
+    width:90%;
+    height:20px;
+    border-radius:50%;
+    display:block;
+    opacity:0;
+    pointer-events:all;
+    z-index:10;
+}
+.name .circle input:checked ~ .first{
+    transform:translateX(100%);
+    transition:.4s;
+}
+
